@@ -5,7 +5,6 @@ public class worker {
         StringBuilder binary = new StringBuilder();
         for (char c : input.toCharArray()) binary.append(Integer.toBinaryString(c));
         int decimal = Integer.parseInt(binary.toString(), 2);
-        String hexStr = Integer.toString(decimal, 16);
-        return hexStr;
+        return Integer.toString(decimal, 16);
     }
 }
